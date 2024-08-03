@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="/public/css/admin.css">
+    <link rel="stylesheet" href="/ecommerce/public/css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="/JavaScript File/admin.js"></script>
-  
-   
+    <script src="C:/Users/Majid Hussein/Desktop/Web Project/JavaScript File/admin.js"></script>
 </head>
 <body>
-    
     <header>
-       
         <h1>Admin Panel</h1>
         <div class="header-right">
             <img src="/Pictures/profile-user.png" width="15%" alt="">
@@ -29,7 +25,7 @@
                 <li><a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#" onclick="showSection('profile')"><i class="fas fa-user"></i> Profile</a></li>
                 <li><a href="#" onclick="showSection('manage')"><i class="fas fa-address-card"></i> Manage</a></li>
-                <li><a href="#" onclick="showSection('revenue')"><i class="fas fa-chart-line"></i> Revenue</a></li>
+               
             </ul>
         </div>
         <div class="container">
@@ -67,52 +63,16 @@
             <div class="content content-section" id="manage">
                 <h2>Manage</h2>
                 <div class="button-container">
-                    <button type="button" onclick="showSection('manageCompanies')">Manage Companies</button>
                     <button type="button" onclick="showSection('manageProducts')">Manage Products</button>
                     <button type="button" onclick="showSection('manageUsers')">Manage Users</button>
                     <button type="button" onclick="showSection('manageOrders')">Manage Orders</button>
                 </div>
             </div>
 
-            <div class="content content-section" id="revenue">
-                <h2>Revenue</h2>
-                <p>Here you can find revenue statistics and reports for the products.</p>
-            </div>
-
-            <div id="manageCompanies" class="content content-section">
-                <h2>Manage Companies</h2>
-                <button class="add-button">Add Company</button>
-                <table>
-                    <tr>
-                        <th>Company Image</th>
-                        <th>Company Name</th>
-                        <th>Description</th>
-                        <th>Actions</th>
-                    </tr>
-                    <tr data-id="Company-1">
-                        <td><img src="company1.jpg" alt="Company 1" style="width: 100px; height: auto;"></td>
-                        <td>Company 1</td>
-                        <td>Sample Description for Company 1</td>
-                        <td class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </td>
-                    </tr>
-                    <tr data-id="Company-2">
-                        <td><img src="company2.jpg" alt="Company 2" style="width: 100px; height: auto;"></td>
-                        <td>Company 2</td>
-                        <td>Sample Description for Company 2</td>
-                        <td class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
 
             <div id="manageProducts" class="content content-section">
                 <h2>Manage Products</h2>
-                <button class="add-button">Add Product</button>
+                <button class="add-button" onclick="showModal('product')">Add Product</button>
                 <table>
                     <tr>
                         <th>Product Image</th>
@@ -143,7 +103,7 @@
 
             <div id="manageUsers" class="content content-section">
                 <h2>Manage Users</h2>
-                <button class="add-button">Add User</button>
+                <button class="add-button" onclick="showModal('user')">Add User</button>
                 <table>
                     <tr>
                         <th>User Name</th>
@@ -206,6 +166,21 @@
             </div>
         </div>
     </div>
-  
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="modalCloseButton" class="close">&times;</span>
+        <h2 id="modalTitle">Add Item</h2>
+        <form id="modalForm">
+            
+        </form>
+        <button type="button" id="modalSaveButton">Save</button>
+        <button type="button" id="modalCancelButton">Cancel</button>
+    </div>
+</div>
+
+
+    <script src="/JavaScript File/admin.js"></script>
 </body>
 </html>
