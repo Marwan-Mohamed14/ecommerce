@@ -1,13 +1,14 @@
-body{
+body {
     align-items: center;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     justify-content: center;
-    display:flex;
+    display: flex;
+    background: linear-gradient(to left, #ffe8c9, #FAF9F6);
 }
-.container{
-    background-color: #f1f1f1;
+
+.container { 
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -16,40 +17,46 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height: 100vh;
     max-width: 100%;
 }
-#problem{
-width:50%;
-padding: 20px;
-height:300px;
-}
-#btn{
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; 
-    justify-content: center;
-    align-items: center;
+
+#problem {
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    height: 300px;
+    border: solid 2px #333;
 }
 
-#btn:hover{
-    background-color: #45a049;
-}
-#back{
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
+}
+
+.button-container button {
     padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    position:absolute;
-    right: 0;
-    bottom:0;
+    margin: 0 10px;
+}
+
+#btn {
+    background-color:  #c57f50;
+    color: white;
+}
+
+#btn:hover {
+    background-color: #e65c00;
+}
+
+#back {
+    background-color:#2c3e50;
+    color: white;
+}
+#back:hover{
+    background-color: #34495e ;
 }

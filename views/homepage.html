@@ -8,7 +8,8 @@
 
  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
- <link rel="stylesheet" href="/CSS FILE/home.css">
+ <link rel="stylesheet" href="/public/css/home.css">
+
     <title>Home Page</title>
 </head>
 
@@ -21,31 +22,37 @@
 
 <body>
   
+  <header>
     <div class="navbar">
         <div class="top-bar">
+            <div class="dropdown">
+                <button class="dropbtn">Categories</button>
+                <div class="dropdown-content">
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
             <div class="logo">
-                <img src="looogo.png"alt="Logo">  
-                <span><i class="fa-solid fa-location-dot"></i> Deliver to <strong>Egypt</strong></span>
+                <img src="looogo.png" alt="Logo">  
+                <span style="color: white;"><i class="fa-solid fa-location-dot" style="color: #c57f50;"></i> Deliver to <strong>Egypt</strong></span>
             </div>
             <div class="search-container">
-               <span><i class="fa-solid fa-magnifying-glass"></i></span> <input type="text" placeholder="What are you looking for?">
+                <span><i class="fa-solid fa-magnifying-glass" style="color:#c57f50;"></i></span>
+                <input type="text" placeholder="What are you looking for?">
             </div>
             <div class="menu">
+                <a href="homepage.html">Home <i class="fa-solid fa-house" style="color:#c57f50;"></i></a>
                 <a href="#">العربية</a>
-                <a href="#">Log in <i class="fa-solid fa-user"></i></a>
-                <a href="#">Wishlist <i class="fa-solid fa-heart"></i></a>
-                <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="/views/login.html">Log in <i class="fa-solid fa-user" style="color: #c57f50;"></i></a>
+                <a href="#">Wishlist <i class="fa-solid fa-heart" style="color: #c57f50;"></i></a >
+                <a href="/views/cartt.html">Cart <i class="fa-solid fa-cart-shopping" style="color: #c57f50;"></i> </a>
+
             </div>
         </div>
-        <div class="categories-bar">
-            <a href="#">Luis-Viton</a>
-            <a href="#">GUCCI</a>
-            <a href="#">Rolex</a>
-            <a href="#">Channel</a>
-           
-           
-        </div>
     </div>
+</header>
+
     
 
 
@@ -75,41 +82,41 @@
 <div class="containerr">
     <div class="card">
       <div class="image-container">
+        <img src="/Pictures/luis-viton-bag.jpg">
+      </div>
+      <h1>Tailored </h1>
+      <p class="price">$2500</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
+    </div>
+    <div class="card">
+      <div class="image-container">
         <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
       <h1>Tailored </h1>
-      <p class="price">$19.99</p>
+      <p class="price">$2500</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button onclick="location.href='cart.html'" >Buy Now</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
     <div class="card">
       <div class="image-container">
-        <img src="https://s3.amazonaws.com/ISHOWIMAGES/ROLEX+V7/Rolex+Watches/Rolex+Model+Pages/watch_assets/upright_watches_assets/mobile/m126284rbr-0011_drp-upright-bba-with-shadow.png" alt="Denim Jeans">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
+      <h1>Tailored </h1>
+      <p class="price">$2500</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
-    </div>
-      
-    <div class="card">
-      <div class="image-container">
-        <img src="louis-vuitton-Front view.avif" alt="Denim Jeans">
-      </div>
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
     <div class="card">
       <div class="image-container">
-        <img src="luis-viton-bag.jpg" alt="Denim Jeans">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
+      <h1>Tailored </h1>
+      <p class="price">$2500</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
+    
    
   </div>
 
@@ -132,36 +139,36 @@
       <h1>Tailored </h1>
       <p class="price">$19.99</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button onclick="location.href='cart.html'" >Buy Now</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
     <div class="card">
       <div class="image-container">
-        <img src="https://s3.amazonaws.com/ISHOWIMAGES/ROLEX+V7/Rolex+Watches/Rolex+Model+Pages/watch_assets/upright_watches_assets/mobile/m126284rbr-0011_drp-upright-bba-with-shadow.png" alt="Denim Jeans">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
-      <h1>Tailored Jeans</h1>
+      <h1>Tailored </h1>
       <p class="price">$19.99</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
-    </div>
-      
-    <div class="card">
-      <div class="image-container">
-        <img src="louis-vuitton-Front view.avif" alt="Denim Jeans">
-      </div>
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
     <div class="card">
       <div class="image-container">
-        <img src="luis-viton-bag.jpg" alt="Denim Jeans">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
-      <h1>Tailored Jeans</h1>
+      <h1>Tailored </h1>
       <p class="price">$19.99</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
+    <div class="card">
+      <div class="image-container">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
+      </div>
+      <h1>Tailored </h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
+    </div>
+    
    
   </div>
 
@@ -184,36 +191,36 @@
       <h1>Tailored </h1>
       <p class="price">$19.99</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button onclick="location.href='cart.html'" >Buy Now</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
     <div class="card">
       <div class="image-container">
-        <img src="https://s3.amazonaws.com/ISHOWIMAGES/ROLEX+V7/Rolex+Watches/Rolex+Model+Pages/watch_assets/upright_watches_assets/mobile/m126284rbr-0011_drp-upright-bba-with-shadow.png" alt="Denim Jeans">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
-      <h1>Tailored Jeans</h1>
+      <h1>Tailored </h1>
       <p class="price">$19.99</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
-    </div>
-      
-    <div class="card">
-      <div class="image-container">
-        <img src="louis-vuitton-Front view.avif" alt="Denim Jeans">
-      </div>
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
     <div class="card">
       <div class="image-container">
-        <img src="luis-viton-bag.jpg" alt="Denim Jeans">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
       </div>
-      <h1>Tailored Jeans</h1>
+      <h1>Tailored </h1>
       <p class="price">$19.99</p>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
     </div>
+    <div class="card">
+      <div class="image-container">
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1704994366/786186_AADJ9_9097_012_100_0000_Light-Mens-Gucci-Re-Web-trainer.jpg" alt="Denim Jeans">
+      </div>
+      <h1>Tailored </h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p><button onclick="location.href='/views/preview.html'" >Buy Now</button></p>
+    </div>
+   
    
   </div>
 
@@ -237,7 +244,7 @@
 
 
 
-<!--- Footer -->
+
 <footer>
     <div class="footer-content">
         <div>
@@ -282,4 +289,5 @@
 
 
 </body>
+<script src="/JavaScript File/cartt.js"></script>
 </html>
