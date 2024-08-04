@@ -2,8 +2,27 @@ const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const mongoose = require('mongoose');
 const app = express();
+const path = require('path'); 
 const session = require('express-session');
+var ejs = require('ejs');
 const existingIds = new Set(); 
+var bodyParser = require('body-parser');
+
+
+app.set('view engine', 'ejs');//marwan
+app.set('views', path.join(__dirname, 'views')); //marwan
+
+
+app.use(express.static(path.join(__dirname, 'public')));//marwan
+app.use('/JavaScript File', express.static(path.join(__dirname, 'JavaScript File')));//marwan
+
+
+app.get('/',function(req, res){
+    res.render('homepage');
+});
+
+app.use(bodyParser.urlencoded({ extended:true }));
+
 
 function generateUniqueId() {
     let id;
@@ -66,6 +85,7 @@ function managesessions(req,set){
 app.get('/maged', (req, res) => {
     
 });
+
 
 
 

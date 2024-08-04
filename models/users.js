@@ -17,12 +17,16 @@ const UserSchema = mongoose.Schema(
             required: false
 
         },
-        
-        image: {
-            type: String,
-            required: false
-
+        products:{
+            type: Array,
         },
+        
+      //  image: {
+          //  type: String,
+          //  required: false
+
+       // },
+
     },
 {
     Timestamp: true
